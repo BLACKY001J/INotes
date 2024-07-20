@@ -5,8 +5,9 @@
   "main": "config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon config",
-    "build": "react run build"
+    "build": "react run build",
+    "start": "nodemon config"
+    
   },
   "author": "",
   "license": "ISC",
