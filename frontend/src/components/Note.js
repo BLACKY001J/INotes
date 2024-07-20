@@ -6,7 +6,7 @@ const Note = () => {
 
     const handleClick = async () => {
 
-        let result = await fetch('https://i-notesbackend.vercel.app/addnote', {
+        let result = await fetch('https://inotesbackend-hzxc.onrender.com/addnote', {
             method: 'post',
             body: JSON.stringify({ title, description }),
             headers: {
