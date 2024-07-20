@@ -17,7 +17,7 @@ const Login = () => {
 
 
     const collectData = async () => {
-        let result = await fetch('http://localhost:5000/login', {
+        let result = await fetch('https://i-notesbackend.vercel.app//login', {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {
