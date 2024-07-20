@@ -12,7 +12,7 @@ const NoteList = () => {
     }, []);
 
     const getNotes = async () => {
-        let result = await fetch('http://localhost:5000/allnotes', {
+        let result = await fetch('https://i-notesbackend.vercel.app/allnotes', {
             method: 'get',
             headers: {
                 authorization: JSON.parse(localStorage.getItem('token'))
