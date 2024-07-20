@@ -17,7 +17,7 @@ const Login = () => {
 
 
     const collectData = async () => {
-        let result = await fetch('https://i-notesbackend.vercel.app/login', {
+        let result = await fetch('https://inotesbackend-hzxc.onrender.com/login', {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {
