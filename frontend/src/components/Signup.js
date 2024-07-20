@@ -18,7 +18,7 @@ const Signup = ()=> {
     
     
     const collectData = async ()=> {
-        let result = await fetch("https://i-notesbackend.vercel.app/register",{
+        let result = await fetch("https://inotesbackend-hzxc.onrender.com/register",{
             method: 'post',
             body: JSON.stringify({name,email,password}),
             headers: {
