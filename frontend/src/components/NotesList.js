@@ -12,7 +12,7 @@ const NoteList = () => {
     }, []);
 
     const getNotes = async () => {
-        let result = await fetch('https://i-notesbackend.vercel.app/allnotes', {
+        let result = await fetch('https://inotesbackend-hzxc.onrender.com/allnotes', {
             method: 'get',
             headers: {
                 authorization: JSON.parse(localStorage.getItem('token'))
@@ -24,7 +24,7 @@ const NoteList = () => {
     }
 
     const deleteNotes = async (id)=> {
-        let result = await fetch(`https://i-notesbackend.vercel.app/deletenote/${id}`, {
+        let result = await fetch(`https://inotesbackend-hzxc.onrender.com/deletenote/${id}`, {
             method: 'Delete',
             headers: {
                 authorization: JSON.parse(localStorage.getItem('token'))
