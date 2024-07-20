@@ -15,7 +15,7 @@ const Update = ()=> {
 
     const getNotesDetails = async () => {
         console.warn(params)
-        let result = await fetch(`https://i-notesbackend.vercel.app/notes/${params.id}`, {
+        let result = await fetch(`https://inotesbackend-hzxc.onrender.com/notes/${params.id}`, {
             headers: {
                 authorization: JSON.parse(localStorage.getItem('token'))
             }
@@ -27,7 +27,7 @@ const Update = ()=> {
     }
 
     const updateNote = async () => {
-        let result = await fetch(`https://i-notesbackend.vercel.app/notes/${params.id}`, {
+        let result = await fetch(`https://inotesbackend-hzxc.onrender.com/notes/${params.id}`, {
             method: 'Put',
             body: JSON.stringify({title, description}),
             headers: {
