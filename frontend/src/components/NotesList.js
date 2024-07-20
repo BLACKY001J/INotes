@@ -24,7 +24,7 @@ const NoteList = () => {
     }
 
     const deleteNotes = async (id)=> {
-        let result = await fetch(`http://localhost:5000/deletenote/${id}`, {
+        let result = await fetch(`https://i-notesbackend.vercel.app/deletenote/${id}`, {
             method: 'Delete',
             headers: {
                 authorization: JSON.parse(localStorage.getItem('token'))
