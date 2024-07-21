@@ -1,143 +1,336 @@
 
-.nav-ul {
-  padding: 5px;
-  margin: 0px;
-  background-color: skyblue;
-}
-.nav-ul li{
-  display:  inline-block;
-  padding: 10px;
-}
-.nav-ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  background-color: skyblue;
-  width: 100%;
-  text-align: center;
+.nav-component {
+    background-color: #333;
+    padding: 10px;
+    height: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navulh {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navuls {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.navulh li {
+    margin: 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.navulh li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
 }
 
-.register, .product{
-  margin-left: 30%;
-}
-.login{
-  margin-left: 30%;
-  margin-top: 100px;
+
+.navulh li a:hover {
+    background-color: #575757;
 }
 
+
+.navuls li {
+    margin: 0 10px;
+}
+
+
+.navuls li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+
+.navuls li a:hover {
+    background-color: #575757;
+}
+
+
+
+
+
+/* Login */
+
+/* General styling for the login container */
+.login {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for the login heading */
+.login h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the input boxes */
 .inputBox {
-  padding: 7px;
-  display: block;
-  border: 1px solid skyblue;
-  width: 300px;
-  margin: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
+/* Styling for the login button */
 .appButton {
-  margin: 20px;
-  width: 150px;
-  padding: 10px;
-  background-color: skyblue;
-  border: solid 1px;
-  cursor: pointer;
-}
-.nav-right{
-  text-align: right;
-}
-.logo {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  float: left;
-  margin-top: 3px;
-  margin-left: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.invalid-input {
-  display: block;
-  color: red;
-  margin-top: -20px;
-  margin-left: 20px;
+.appButton:hover {
+    background-color: #575757;
 }
 
-.product-list {
-  text-align: center;
-  margin-top: 50px;
+
+
+/* Signup */
+
+/* General styling for the register container */
+.register {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.product-list ul li {
-  display: inline-block;
-  width: 150px;
-  border: 1px solid skyblue;
-  padding: 5px;
+/* Styling for the register heading */
+.register h1 {
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.product-list ul{
-  margin: 0;
+/* Styling for the input boxes */
+.inputBox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.search-product-box {
-  width: 400px;
-  margin: 20px;
-  height: 38px;
-  padding-left: 30px;
-  border: solid 1px skyblue;
+/* Styling for the register button */
+.appButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.app-container{
-  grid-template-columns: 1fr;
+.appButton:hover {
+    background-color: #575757;
 }
 
-@media (min-width: 600px){
-  .app-container{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 20px;
-  }
+
+
+/* Notes */
+
+/* General styling for the app container */
+.app-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.note-form{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Styling for the heading */
+.app-container h2 {
+    margin-bottom: 20px;
+    color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for the form */
+.note-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* Styling for the input fields */
+.input-form, .text-area {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styling for the text area specifically */
+.text-area {
+    height: 150px;
+    resize: none;
+}
+
+/* Styling for the button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #575757;
+}
+
+
+/* Card component */
+
+/* General styling for the card */
+.card-container {
+    width: 18rem;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the card body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Styling for the card title */
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styling for the card text */
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Styling for the buttons */
+.card-container .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.card-container .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.card-container .btn-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-container .btn-link:hover {
+    text-decoration: underline;
+}
+
+
+/* update note */
+
+
+/* General styling for the product container */
+.product {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for the heading */
+.product h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the input boxes */
+.inputBox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styling for the update button */
+.appButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.appButton:hover {
+    background-color: #575757;
+}
+
+
