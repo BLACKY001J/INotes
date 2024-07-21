@@ -12,15 +12,15 @@ const Nav = ()=> {
 
     return ( 
         
-            <div>
+            <div className='nav-component'>
                 { isUserLogedOrSignedIn ?
-                <ul className='nav-ul'>
+                <ul className='navulh'>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/notes'>Notes</Link></li>
                     <li><Link to='/about'>About</Link></li>
                     <li><Link onClick={logout} to='/signup'>Logout</Link></li>
                 </ul>
-                : <ul className='nav-ul'>
+                : <ul className='navuls'>
                     <li><Link to='/signup'>SignUp</Link></li>
                     <li><Link to='/login'>Login</Link></li>
                 </ul>
